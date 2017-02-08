@@ -106,7 +106,7 @@
         builder.adArray = arrayFromService;
         builder.viewFrame = (CGRect){0,100,self.view.bounds.size.width,self.view.bounds.size.width/2.f};
         builder.adItemSize = (CGSize){self.view.bounds.size.width/2.5f,self.view.bounds.size.width/4.f};
-        builder.minimumLineSpacing = 40;
+        builder.minimumLineSpacing = 0;
         builder.secondaryItemMinAlpha = 0.6;
         builder.threeDimensionalScale = 1.45;
         builder.itemCellNibName = @"SCAdDemoCollectionViewCell";

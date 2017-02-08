@@ -12,10 +12,10 @@
 ///将builder的LINE_SPACING设置为该值则会自动计算合适的间距
 #define SC_BUILDER_LINE_SPACING_AUTO -10001
 typedef NS_ENUM(NSInteger,SCAdViewScrollDirection) {
-    SCAdViewScrollDirectionRight = 0,
-    SCAdViewScrollDirectionLeft,
-    SCAdViewScrollDirectionBotom,
-    SCAdViewScrollDirectionTop,
+    SCAdViewScrollDirectionRight = 0,//轮播向右
+    SCAdViewScrollDirectionLeft,//轮播向左
+    SCAdViewScrollDirectionBotom,//轮播向下
+    SCAdViewScrollDirectionTop,//轮播向上
 };
 @interface SCAdViewBuilder : NSObject
 #pragma mark -必要参数
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger,SCAdViewScrollDirection) {
  */
 @property (nonatomic,assign)CGRect viewFrame;
 /**
- *   广告的大小
+ *   广告的大小 advertisement's item size
  */
 @property (nonatomic,assign)CGSize adItemSize;
 /**
@@ -66,11 +66,11 @@ typedef NS_ENUM(NSInteger,SCAdViewScrollDirection) {
  */
 @property (nonatomic,assign)CGFloat minimumInteritemSpacing;
 /**
- *   3D缩放值，若为0，则为2D广告
+ *   3D缩放值，若为0，则为2D广告    3D scale  if threeDimensionalScale<0,it will use 2D
  */
 @property (nonatomic,assign)CGFloat threeDimensionalScale;
 /**
- *   无限轮播 默认为yes
+ *   无限轮播 默认为yes     Default is Yes
  */
 @property (nonatomic,assign)BOOL allowedInfinite;
 

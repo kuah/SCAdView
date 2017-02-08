@@ -20,6 +20,7 @@
 
 #define SC_AD_CELL_IDENTIFIER @"SC_AD_CELL_IDENTIFIER"
 #define SC_ERROR(_DESC_)  NSCAssert(0,_DESC_)
+///轮播两侧准备的item倍数 count of prepared item group at the both side
 #define SC_PREPARE_ITEM_TIME 2
 @interface SCAdView()<SCCollectionViewFlowLayoutDelegate>
 {
