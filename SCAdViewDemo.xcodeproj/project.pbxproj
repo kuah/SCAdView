@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64EC7E3C1E49735C003D1BA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E3B1E49735C003D1BA0 /* main.m */; };
+		64EC7E3F1E49735C003D1BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E3E1E49735C003D1BA0 /* AppDelegate.m */; };
+		64EC7E421E49735C003D1BA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E411E49735C003D1BA0 /* ViewController.m */; };
+		64EC7E451E49735C003D1BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7E431E49735C003D1BA0 /* Main.storyboard */; };
+		64EC7E471E49735C003D1BA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7E461E49735C003D1BA0 /* Assets.xcassets */; };
+		64EC7E4A1E49735C003D1BA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7E481E49735C003D1BA0 /* LaunchScreen.storyboard */; };
+		64EC7E551E49735C003D1BA0 /* SCAdViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E541E49735C003D1BA0 /* SCAdViewDemoTests.m */; };
+		64EC7E601E49735C003D1BA0 /* SCAdViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E5F1E49735C003D1BA0 /* SCAdViewDemoUITests.m */; };
+		64EC7E7C1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E7A1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m */; };
+		64EC7E7D1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */; };
+		64EC7E811E4B1516003D1BA0 /* HeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E801E4B1516003D1BA0 /* HeroModel.m */; };
+		64EC7E881E4B217C003D1BA0 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */; };
+		64EC7E891E4B217C003D1BA0 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E861E4B217C003D1BA0 /* SCAdView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64EC7E511E49735C003D1BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EC7E2F1E49735C003D1BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EC7E361E49735C003D1BA0;
+			remoteInfo = SCAdViewDemo;
+		};
+		64EC7E5C1E49735C003D1BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EC7E2F1E49735C003D1BA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EC7E361E49735C003D1BA0;
+			remoteInfo = SCAdViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64EC7E371E49735C003D1BA0 /* SCAdViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAdViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EC7E3B1E49735C003D1BA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		64EC7E3D1E49735C003D1BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		64EC7E3E1E49735C003D1BA0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		64EC7E401E49735C003D1BA0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		64EC7E411E49735C003D1BA0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		64EC7E441E49735C003D1BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64EC7E461E49735C003D1BA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64EC7E491E49735C003D1BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64EC7E4B1E49735C003D1BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EC7E501E49735C003D1BA0 /* SCAdViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCAdViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EC7E541E49735C003D1BA0 /* SCAdViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAdViewDemoTests.m; sourceTree = "<group>"; };
+		64EC7E561E49735C003D1BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EC7E5B1E49735C003D1BA0 /* SCAdViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCAdViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EC7E5F1E49735C003D1BA0 /* SCAdViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAdViewDemoUITests.m; sourceTree = "<group>"; };
+		64EC7E611E49735C003D1BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EC7E791E49823D003D1BA0 /* SCAdDemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdDemoCollectionViewCell.h; sourceTree = "<group>"; };
+		64EC7E7A1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdDemoCollectionViewCell.m; sourceTree = "<group>"; };
+		64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAdDemoCollectionViewCell.xib; sourceTree = "<group>"; };
+		64EC7E7F1E4B1516003D1BA0 /* HeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroModel.h; sourceTree = "<group>"; };
+		64EC7E801E4B1516003D1BA0 /* HeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroModel.m; sourceTree = "<group>"; };
+		64EC7E831E4B217C003D1BA0 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
+		64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdCollectionViewLayout.m; sourceTree = "<group>"; };
+		64EC7E851E4B217C003D1BA0 /* SCAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdView.h; sourceTree = "<group>"; };
+		64EC7E861E4B217C003D1BA0 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
+		64EC7E871E4B217C003D1BA0 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64EC7E341E49735C003D1BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E4D1E49735C003D1BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E581E49735C003D1BA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64EC7E2E1E49735C003D1BA0 = {
+			isa = PBXGroup;
+			children = (
+				64EC7E391E49735C003D1BA0 /* SCAdViewDemo */,
+				64EC7E531E49735C003D1BA0 /* SCAdViewDemoTests */,
+				64EC7E5E1E49735C003D1BA0 /* SCAdViewDemoUITests */,
+				64EC7E381E49735C003D1BA0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64EC7E381E49735C003D1BA0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E371E49735C003D1BA0 /* SCAdViewDemo.app */,
+				64EC7E501E49735C003D1BA0 /* SCAdViewDemoTests.xctest */,
+				64EC7E5B1E49735C003D1BA0 /* SCAdViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64EC7E391E49735C003D1BA0 /* SCAdViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E791E49823D003D1BA0 /* SCAdDemoCollectionViewCell.h */,
+				64EC7E7A1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m */,
+				64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */,
+				64EC7E7F1E4B1516003D1BA0 /* HeroModel.h */,
+				64EC7E801E4B1516003D1BA0 /* HeroModel.m */,
+				64EC7E821E4B217C003D1BA0 /* SCAdView */,
+				64EC7E3D1E49735C003D1BA0 /* AppDelegate.h */,
+				64EC7E3E1E49735C003D1BA0 /* AppDelegate.m */,
+				64EC7E401E49735C003D1BA0 /* ViewController.h */,
+				64EC7E411E49735C003D1BA0 /* ViewController.m */,
+				64EC7E431E49735C003D1BA0 /* Main.storyboard */,
+				64EC7E461E49735C003D1BA0 /* Assets.xcassets */,
+				64EC7E481E49735C003D1BA0 /* LaunchScreen.storyboard */,
+				64EC7E4B1E49735C003D1BA0 /* Info.plist */,
+				64EC7E3A1E49735C003D1BA0 /* Supporting Files */,
+			);
+			path = SCAdViewDemo;
+			sourceTree = "<group>";
+		};
+		64EC7E3A1E49735C003D1BA0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E3B1E49735C003D1BA0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64EC7E531E49735C003D1BA0 /* SCAdViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E541E49735C003D1BA0 /* SCAdViewDemoTests.m */,
+				64EC7E561E49735C003D1BA0 /* Info.plist */,
+			);
+			path = SCAdViewDemoTests;
+			sourceTree = "<group>";
+		};
+		64EC7E5E1E49735C003D1BA0 /* SCAdViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E5F1E49735C003D1BA0 /* SCAdViewDemoUITests.m */,
+				64EC7E611E49735C003D1BA0 /* Info.plist */,
+			);
+			path = SCAdViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		64EC7E821E4B217C003D1BA0 /* SCAdView */ = {
+			isa = PBXGroup;
+			children = (
+				64EC7E831E4B217C003D1BA0 /* SCAdCollectionViewLayout.h */,
+				64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */,
+				64EC7E851E4B217C003D1BA0 /* SCAdView.h */,
+				64EC7E861E4B217C003D1BA0 /* SCAdView.m */,
+				64EC7E871E4B217C003D1BA0 /* SCAdViewRenderDelegate.h */,
+			);
+			path = SCAdView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64EC7E361E49735C003D1BA0 /* SCAdViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EC7E641E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemo" */;
+			buildPhases = (
+				64EC7E331E49735C003D1BA0 /* Sources */,
+				64EC7E341E49735C003D1BA0 /* Frameworks */,
+				64EC7E351E49735C003D1BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCAdViewDemo;
+			productName = SCAdViewDemo;
+			productReference = 64EC7E371E49735C003D1BA0 /* SCAdViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64EC7E4F1E49735C003D1BA0 /* SCAdViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EC7E671E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemoTests" */;
+			buildPhases = (
+				64EC7E4C1E49735C003D1BA0 /* Sources */,
+				64EC7E4D1E49735C003D1BA0 /* Frameworks */,
+				64EC7E4E1E49735C003D1BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64EC7E521E49735C003D1BA0 /* PBXTargetDependency */,
+			);
+			name = SCAdViewDemoTests;
+			productName = SCAdViewDemoTests;
+			productReference = 64EC7E501E49735C003D1BA0 /* SCAdViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64EC7E5A1E49735C003D1BA0 /* SCAdViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EC7E6A1E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemoUITests" */;
+			buildPhases = (
+				64EC7E571E49735C003D1BA0 /* Sources */,
+				64EC7E581E49735C003D1BA0 /* Frameworks */,
+				64EC7E591E49735C003D1BA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64EC7E5D1E49735C003D1BA0 /* PBXTargetDependency */,
+			);
+			name = SCAdViewDemoUITests;
+			productName = SCAdViewDemoUITests;
+			productReference = 64EC7E5B1E49735C003D1BA0 /* SCAdViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64EC7E2F1E49735C003D1BA0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Coder Chan";
+				TargetAttributes = {
+					64EC7E361E49735C003D1BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					64EC7E4F1E49735C003D1BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64EC7E361E49735C003D1BA0;
+					};
+					64EC7E5A1E49735C003D1BA0 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 64EC7E361E49735C003D1BA0;
+					};
+				};
+			};
+			buildConfigurationList = 64EC7E321E49735C003D1BA0 /* Build configuration list for PBXProject "SCAdViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64EC7E2E1E49735C003D1BA0;
+			productRefGroup = 64EC7E381E49735C003D1BA0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64EC7E361E49735C003D1BA0 /* SCAdViewDemo */,
+				64EC7E4F1E49735C003D1BA0 /* SCAdViewDemoTests */,
+				64EC7E5A1E49735C003D1BA0 /* SCAdViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64EC7E351E49735C003D1BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC7E4A1E49735C003D1BA0 /* LaunchScreen.storyboard in Resources */,
+				64EC7E471E49735C003D1BA0 /* Assets.xcassets in Resources */,
+				64EC7E7D1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib in Resources */,
+				64EC7E451E49735C003D1BA0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E4E1E49735C003D1BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E591E49735C003D1BA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64EC7E331E49735C003D1BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC7E891E4B217C003D1BA0 /* SCAdView.m in Sources */,
+				64EC7E421E49735C003D1BA0 /* ViewController.m in Sources */,
+				64EC7E881E4B217C003D1BA0 /* SCAdCollectionViewLayout.m in Sources */,
+				64EC7E3F1E49735C003D1BA0 /* AppDelegate.m in Sources */,
+				64EC7E7C1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m in Sources */,
+				64EC7E3C1E49735C003D1BA0 /* main.m in Sources */,
+				64EC7E811E4B1516003D1BA0 /* HeroModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E4C1E49735C003D1BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC7E551E49735C003D1BA0 /* SCAdViewDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EC7E571E49735C003D1BA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EC7E601E49735C003D1BA0 /* SCAdViewDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64EC7E521E49735C003D1BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EC7E361E49735C003D1BA0 /* SCAdViewDemo */;
+			targetProxy = 64EC7E511E49735C003D1BA0 /* PBXContainerItemProxy */;
+		};
+		64EC7E5D1E49735C003D1BA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EC7E361E49735C003D1BA0 /* SCAdViewDemo */;
+			targetProxy = 64EC7E5C1E49735C003D1BA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64EC7E431E49735C003D1BA0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64EC7E441E49735C003D1BA0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64EC7E481E49735C003D1BA0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64EC7E491E49735C003D1BA0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64EC7E621E49735C003D1BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64EC7E631E49735C003D1BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64EC7E651E49735C003D1BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAdViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		64EC7E661E49735C003D1BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SCAdViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		64EC7E681E49735C003D1BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SCAdViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAdViewDemo.app/SCAdViewDemo";
+			};
+			name = Debug;
+		};
+		64EC7E691E49735C003D1BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SCAdViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SCAdViewDemo.app/SCAdViewDemo";
+			};
+			name = Release;
+		};
+		64EC7E6B1E49735C003D1BA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SCAdViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SCAdViewDemo;
+			};
+			name = Debug;
+		};
+		64EC7E6C1E49735C003D1BA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SCAdViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Chan4iOS.SCAdViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SCAdViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64EC7E321E49735C003D1BA0 /* Build configuration list for PBXProject "SCAdViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EC7E621E49735C003D1BA0 /* Debug */,
+				64EC7E631E49735C003D1BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EC7E641E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EC7E651E49735C003D1BA0 /* Debug */,
+				64EC7E661E49735C003D1BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EC7E671E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EC7E681E49735C003D1BA0 /* Debug */,
+				64EC7E691E49735C003D1BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EC7E6A1E49735C003D1BA0 /* Build configuration list for PBXNativeTarget "SCAdViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EC7E6B1E49735C003D1BA0 /* Debug */,
+				64EC7E6C1E49735C003D1BA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64EC7E2F1E49735C003D1BA0 /* Project object */;
+}
