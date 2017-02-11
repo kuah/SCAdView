@@ -227,6 +227,7 @@
 }
 
 -(void)_secretlyChangeIndex{
+    if (!_builder.allowedInfinite)return;
     CGPoint pInUnderView = [self convertPoint:self.collectionView.center toView:self.collectionView];
     // 获取中间的indexpath
     NSIndexPath *indexpath = [self.collectionView indexPathForItemAtPoint:pInUnderView];
