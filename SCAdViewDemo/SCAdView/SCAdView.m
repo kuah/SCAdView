@@ -246,7 +246,7 @@
 #pragma mark -layout delegate
 -(void)sc_collectioViewScrollToIndex:(NSInteger)index{
     if (self.delegate &&[self.delegate respondsToSelector:@selector(sc_scrollToIndex:)]) {
-        [self.delegate sc_scrollToIndex:index];
+        [self.delegate sc_scrollToIndex:index%_builder.adArray.count];
     }
 }
 
