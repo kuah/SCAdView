@@ -300,6 +300,7 @@
         }
         self.dataArray = [NSMutableArray arrayWithArray:dataArray];
     }
+    _builder.adArray = adArray;
     [self.collectionView reloadData];
 }
 @end

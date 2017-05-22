@@ -118,12 +118,14 @@
 
 }
 #pragma mark -delegate
+
 -(void)sc_didClickAd:(id)adModel{
     NSLog(@"sc_didClickAd-->%@",adModel);
     if ([adModel isKindOfClass:[HeroModel class]]) {
         NSLog(@"%@",((HeroModel*)adModel).introduction);
     }
 }
+
 -(void)sc_scrollToIndex:(NSInteger)index{
     NSLog(@"sc_scrollToIndex-->%ld",index);
 }
