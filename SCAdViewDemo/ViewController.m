@@ -75,7 +75,7 @@
         builder.itemCellNibName = @"SCAdDemoCollectionViewCell";
         
         //非必要参数
-//        builder.allowedInfinite = NO;  //非必要参数 ：设置不无限循环轮播,默认为Yes
+        builder.allowedInfinite = NO;  //非必要参数 ：设置不无限循环轮播,默认为Yes
 //        builder.minimumLineSpacing = 40; //非必要参数: 如需要可填写，默认会自动计算
 //        builder.scrollEnabled = NO;//非必要参数
         builder.threeDimensionalScale = 1.45;//非必要参数: 若需要使用threeD效果，则需要填写放大或缩小倍数
@@ -139,7 +139,7 @@
     [_adView pause];
 }
 -(void)refresh{
-    [_adView reloadWithDataArray:@[@"李白",@"李白",@"李白",@"李白"]];
+    [_adView reloadWithDataArray:@[@"李白",@"李白",@"李白"]];
 }
 
 

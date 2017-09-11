@@ -166,7 +166,7 @@
     }
     else
     {
-        if (_index != indexPathNow.row)
+        if (_index != indexPathNow.row && indexPathNow.row!=self.cycleIndex)
         {
             _index = indexPathNow.row;
             if (self.delegate && [self.delegate respondsToSelector:@selector(sc_collectioViewScrollToIndex:)])
@@ -174,6 +174,11 @@
                 [self.delegate sc_collectioViewScrollToIndex:_index];
             }
         }
+        if(indexPathNow.row==self.cycleIndex){
+            _index = indexPathNow.row;
+        }
+            
+        
     }
     
     

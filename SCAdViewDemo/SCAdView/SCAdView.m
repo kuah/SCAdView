@@ -28,6 +28,7 @@
     ///因为当用户滑动的时候，轮播不应该继续，所以会被停掉，但是当滑动结束，会根据是否开启了轮播而重新开启
     BOOL _isPlaying; //真实是否开启了播放的状态
     BOOL _expctedToPlay;//用户启动的play
+    SCAdCollectionViewLayout *_layout;
 }
 /**
  *   计时器
@@ -114,6 +115,8 @@
     layout.secondaryItemMinAlpha = builder.secondaryItemMinAlpha;
     layout.threeDimensionalScale = builder.threeDimensionalScale;
     layout.delegate = self;
+    layout.cycleIndex = builder.allowedInfinite?_builder.adArray.count*SC_PREPARE_ITEM_TIME:-1;
+    _layout = layout;
     if(_builder.autoScrollDirection>1){
         CGFloat y_inset =(self.frame.size.height-layout.itemSize.height) / 2.f;
         layout.sectionInset = UIEdgeInsetsMake(y_inset,0,y_inset,0);
@@ -301,6 +304,8 @@
         self.dataArray = [NSMutableArray arrayWithArray:dataArray];
     }
     _builder.adArray = adArray;
+    _layout.cycleIndex =_builder.allowedInfinite?_builder.adArray.count*SC_PREPARE_ITEM_TIME:-1;
     [self.collectionView reloadData];
+    [self _secretlyChangeIndex];
 }
 @end
