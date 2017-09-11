@@ -56,6 +56,7 @@
     //3. 遍历，让靠近中心线的item方法，离开的缩小
     NSInteger closest_index = 0;
     CGFloat distanceToCenter = 10000.0;
+    CGFloat z_index = 0;
     for (UICollectionViewLayoutAttributes *attributes in visibleItemArray)
     {
         
@@ -102,16 +103,21 @@
             }
         }
         //7.层次 : 比较取得最靠近中间的item,重置z-index
-        attributes.zIndex = 0;
         if (absOffset<distanceToCenter) {
+            attributes.zIndex = z_index;
+            z_index++;
             distanceToCenter = absOffset;
             closest_index = [visibleItemArray indexOfObject:attributes];
+        }else{
+            z_index--;
+            attributes.zIndex = z_index;
+            
         }
     }
     //设置最近的item的z-index
     if (visibleItemArray && visibleItemArray.count>0) {
         UICollectionViewLayoutAttributes *closest_attribute = visibleItemArray[closest_index];
-        closest_attribute.zIndex = 1;
+        closest_attribute.zIndex = 1000;
     }
     return visibleItemArray;
 }
@@ -160,7 +166,7 @@
     }
     else
     {
-        if (_index != indexPathNow.row)
+        if (_index != indexPathNow.row && indexPathNow.row!=self.cycleIndex)
         {
             _index = indexPathNow.row;
             if (self.delegate && [self.delegate respondsToSelector:@selector(sc_collectioViewScrollToIndex:)])
@@ -168,6 +174,11 @@
                 [self.delegate sc_collectioViewScrollToIndex:_index];
             }
         }
+        if(indexPathNow.row==self.cycleIndex){
+            _index = indexPathNow.row;
+        }
+            
+        
     }
     
     

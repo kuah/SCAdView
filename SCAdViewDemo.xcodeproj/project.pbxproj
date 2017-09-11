@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BD19C7E1F669BB40056B278 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD19C7A1F669BB40056B278 /* SCAdCollectionViewLayout.m */; };
+		0BD19C7F1F669BB40056B278 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BD19C7C1F669BB40056B278 /* SCAdView.m */; };
 		64EC7E3C1E49735C003D1BA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E3B1E49735C003D1BA0 /* main.m */; };
 		64EC7E3F1E49735C003D1BA0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E3E1E49735C003D1BA0 /* AppDelegate.m */; };
 		64EC7E421E49735C003D1BA0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E411E49735C003D1BA0 /* ViewController.m */; };
@@ -18,8 +20,6 @@
 		64EC7E7C1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E7A1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m */; };
 		64EC7E7D1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */; };
 		64EC7E811E4B1516003D1BA0 /* HeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E801E4B1516003D1BA0 /* HeroModel.m */; };
-		64EC7E881E4B217C003D1BA0 /* SCAdCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */; };
-		64EC7E891E4B217C003D1BA0 /* SCAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64EC7E861E4B217C003D1BA0 /* SCAdView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD19C791F669BB40056B278 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
+		0BD19C7A1F669BB40056B278 /* SCAdCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdCollectionViewLayout.m; sourceTree = "<group>"; };
+		0BD19C7B1F669BB40056B278 /* SCAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdView.h; sourceTree = "<group>"; };
+		0BD19C7C1F669BB40056B278 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
+		0BD19C7D1F669BB40056B278 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
 		64EC7E371E49735C003D1BA0 /* SCAdViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCAdViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EC7E3B1E49735C003D1BA0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		64EC7E3D1E49735C003D1BA0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,11 +66,6 @@
 		64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCAdDemoCollectionViewCell.xib; sourceTree = "<group>"; };
 		64EC7E7F1E4B1516003D1BA0 /* HeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroModel.h; sourceTree = "<group>"; };
 		64EC7E801E4B1516003D1BA0 /* HeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroModel.m; sourceTree = "<group>"; };
-		64EC7E831E4B217C003D1BA0 /* SCAdCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdCollectionViewLayout.h; sourceTree = "<group>"; };
-		64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdCollectionViewLayout.m; sourceTree = "<group>"; };
-		64EC7E851E4B217C003D1BA0 /* SCAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdView.h; sourceTree = "<group>"; };
-		64EC7E861E4B217C003D1BA0 /* SCAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAdView.m; sourceTree = "<group>"; };
-		64EC7E871E4B217C003D1BA0 /* SCAdViewRenderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAdViewRenderDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BD19C781F669BB40056B278 /* SCAdView */ = {
+			isa = PBXGroup;
+			children = (
+				0BD19C791F669BB40056B278 /* SCAdCollectionViewLayout.h */,
+				0BD19C7A1F669BB40056B278 /* SCAdCollectionViewLayout.m */,
+				0BD19C7B1F669BB40056B278 /* SCAdView.h */,
+				0BD19C7C1F669BB40056B278 /* SCAdView.m */,
+				0BD19C7D1F669BB40056B278 /* SCAdViewRenderDelegate.h */,
+			);
+			path = SCAdView;
+			sourceTree = SOURCE_ROOT;
+		};
 		64EC7E2E1E49735C003D1BA0 = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +128,12 @@
 		64EC7E391E49735C003D1BA0 /* SCAdViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0BD19C781F669BB40056B278 /* SCAdView */,
 				64EC7E791E49823D003D1BA0 /* SCAdDemoCollectionViewCell.h */,
 				64EC7E7A1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m */,
 				64EC7E7B1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.xib */,
 				64EC7E7F1E4B1516003D1BA0 /* HeroModel.h */,
 				64EC7E801E4B1516003D1BA0 /* HeroModel.m */,
-				64EC7E821E4B217C003D1BA0 /* SCAdView */,
 				64EC7E3D1E49735C003D1BA0 /* AppDelegate.h */,
 				64EC7E3E1E49735C003D1BA0 /* AppDelegate.m */,
 				64EC7E401E49735C003D1BA0 /* ViewController.h */,
@@ -159,18 +171,6 @@
 				64EC7E611E49735C003D1BA0 /* Info.plist */,
 			);
 			path = SCAdViewDemoUITests;
-			sourceTree = "<group>";
-		};
-		64EC7E821E4B217C003D1BA0 /* SCAdView */ = {
-			isa = PBXGroup;
-			children = (
-				64EC7E831E4B217C003D1BA0 /* SCAdCollectionViewLayout.h */,
-				64EC7E841E4B217C003D1BA0 /* SCAdCollectionViewLayout.m */,
-				64EC7E851E4B217C003D1BA0 /* SCAdView.h */,
-				64EC7E861E4B217C003D1BA0 /* SCAdView.m */,
-				64EC7E871E4B217C003D1BA0 /* SCAdViewRenderDelegate.h */,
-			);
-			path = SCAdView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64EC7E891E4B217C003D1BA0 /* SCAdView.m in Sources */,
+				0BD19C7F1F669BB40056B278 /* SCAdView.m in Sources */,
 				64EC7E421E49735C003D1BA0 /* ViewController.m in Sources */,
-				64EC7E881E4B217C003D1BA0 /* SCAdCollectionViewLayout.m in Sources */,
+				0BD19C7E1F669BB40056B278 /* SCAdCollectionViewLayout.m in Sources */,
 				64EC7E3F1E49735C003D1BA0 /* AppDelegate.m in Sources */,
 				64EC7E7C1E49823D003D1BA0 /* SCAdDemoCollectionViewCell.m in Sources */,
 				64EC7E3C1E49735C003D1BA0 /* main.m in Sources */,

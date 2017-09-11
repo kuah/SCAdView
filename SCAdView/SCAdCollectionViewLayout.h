@@ -22,6 +22,10 @@
  */
 @property (nonatomic,assign)CGFloat threeDimensionalScale;
 /**
+ *   循环起始点
+ */
+@property (nonatomic,assign)NSInteger cycleIndex;
+/**
  *  代理
  */
 @property (nonatomic,assign) id<SCCollectionViewFlowLayoutDelegate>delegate;

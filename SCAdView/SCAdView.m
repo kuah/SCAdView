@@ -20,6 +20,7 @@
 
 #define SC_AD_CELL_IDENTIFIER @"SC_AD_CELL_IDENTIFIER"
 #define SC_ERROR(_DESC_)  NSCAssert(0,_DESC_)
+///轮播两侧准备的item倍数 count of prepared item group at the both side
 #define SC_PREPARE_ITEM_TIME 2
 @interface SCAdView()<SCCollectionViewFlowLayoutDelegate>
 {
@@ -27,6 +28,7 @@
     ///因为当用户滑动的时候，轮播不应该继续，所以会被停掉，但是当滑动结束，会根据是否开启了轮播而重新开启
     BOOL _isPlaying; //真实是否开启了播放的状态
     BOOL _expctedToPlay;//用户启动的play
+    SCAdCollectionViewLayout *_layout;
 }
 /**
  *   计时器
@@ -113,6 +115,8 @@
     layout.secondaryItemMinAlpha = builder.secondaryItemMinAlpha;
     layout.threeDimensionalScale = builder.threeDimensionalScale;
     layout.delegate = self;
+    layout.cycleIndex = builder.allowedInfinite?_builder.adArray.count*SC_PREPARE_ITEM_TIME:-1;
+    _layout = layout;
     if(_builder.autoScrollDirection>1){
         CGFloat y_inset =(self.frame.size.height-layout.itemSize.height) / 2.f;
         layout.sectionInset = UIEdgeInsetsMake(y_inset,0,y_inset,0);
@@ -226,6 +230,7 @@
 }
 
 -(void)_secretlyChangeIndex{
+    if (!_builder.allowedInfinite)return;
     CGPoint pInUnderView = [self convertPoint:self.collectionView.center toView:self.collectionView];
     // 获取中间的indexpath
     NSIndexPath *indexpath = [self.collectionView indexPathForItemAtPoint:pInUnderView];
@@ -244,7 +249,7 @@
 #pragma mark -layout delegate
 -(void)sc_collectioViewScrollToIndex:(NSInteger)index{
     if (self.delegate &&[self.delegate respondsToSelector:@selector(sc_scrollToIndex:)]) {
-        [self.delegate sc_scrollToIndex:index];
+        [self.delegate sc_scrollToIndex:index%_builder.adArray.count];
     }
 }
 
@@ -298,6 +303,9 @@
         }
         self.dataArray = [NSMutableArray arrayWithArray:dataArray];
     }
+    _builder.adArray = adArray;
+    _layout.cycleIndex =_builder.allowedInfinite?_builder.adArray.count*SC_PREPARE_ITEM_TIME:-1;
     [self.collectionView reloadData];
+    [self _secretlyChangeIndex];
 }
 @end
