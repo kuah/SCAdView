@@ -1,7 +1,7 @@
 
 
 # SCAdView
-[![Version](https://img.shields.io/cocoapods/v/FSCalendar.svg?style=flat)](http://cocoadocs.org/docsets/SCAdView)
+[![Version](https://img.shields.io/cocoapods/v/SCAdView.svg?style=flat)](http://cocoadocs.org/docsets/SCAdView)
 [![Platform](https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat)](http://cocoadocs.org/docsets/SCAdView)
 
 `无限轮播图`
