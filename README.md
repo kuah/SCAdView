@@ -1,6 +1,15 @@
-@[无限轮播图] @[3D轮播图] @[广告轮播图]
+
 
 # SCAdView
+[![Version](https://img.shields.io/cocoapods/v/FSCalendar.svg?style=flat)](http://cocoadocs.org/docsets/SCAdView)
+[![Platform](https://img.shields.io/badge/platform-iOS%207%2B-blue.svg?style=flat)](http://cocoadocs.org/docsets/SCAdView)
+
+`无限轮播图`
+
+`3D轮播图`
+
+`广告轮播图`
+
 ## Statement
 If my code can help you even a little bit  ,  please click `star` . Thanks for your support , your star is my motivation.
    
