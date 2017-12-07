@@ -200,7 +200,7 @@
     
     // 获取中间的indexpath
     NSIndexPath *indexpathNew = [collectionView indexPathForItemAtPoint:pInUnderView];
-    
+    NSLog(@"%ld",indexpathNew.row);
     if (indexPath.row == indexpathNew.row)
     {
         //点击了中间的广告
@@ -210,8 +210,13 @@
     }
     else
     {
-        //点击了背后的广告，将会被移动上来
-        [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        if (_builder.autoScrollDirection<1) {
+            //点击了背后的广告，将会被移动上来
+            [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        }else{
+            [self.collectionView scrollToItemAtIndexPath:indexPath atScrollPosition:UICollectionViewScrollPositionCenteredVertically animated:YES];
+        }
+        
     }
 }
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{

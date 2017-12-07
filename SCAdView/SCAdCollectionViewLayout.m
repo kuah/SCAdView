@@ -166,16 +166,14 @@
     }
     else
     {
-        if (_index != indexPathNow.row && indexPathNow.row!=self.cycleIndex)
+//        NSLog(@"%ld,%ld",_index,indexPathNow.row);
+        if (_index != indexPathNow.row)
         {
             _index = indexPathNow.row;
             if (self.delegate && [self.delegate respondsToSelector:@selector(sc_collectioViewScrollToIndex:)])
             {
                 [self.delegate sc_collectioViewScrollToIndex:_index];
             }
-        }
-        if(indexPathNow.row==self.cycleIndex){
-            _index = indexPathNow.row;
         }
             
         
@@ -270,6 +268,11 @@ CGSize SC_ScreenSize() {
         }
     });
     return size;
+}
+
+-(void)setCycleIndex:(NSInteger)cycleIndex{
+    _cycleIndex = cycleIndex;
+    _index=cycleIndex;
 }
 
 @end
